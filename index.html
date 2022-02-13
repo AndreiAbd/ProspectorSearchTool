@@ -1,0 +1,174 @@
+<!--
+Powered | CoderX ©2021 | Andrei Abd
+█▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
+█▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
+CODER X |تم تصميم الموقع و برمجته من قبل اندريه عبد
+mail      :  usr.g0a1@gmial.com
+CoderX    :  https://coderx-project.blogspot.com/
+Whatsapp  :  +963934820511
+Pinterest :  https://www.pinterest.com/andreiabd93/
+Instagram :  https://www.instagram.com/andrei_abd/
+Linkeden  :  https://www.linkedin.com/in/andreiabd
+Facebook  :  https://www.facebook.com/andreiaabd/
+Github    :  https://github.com/AndreiAbd
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="1800">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrei Abd - CoderX">
+    <meta name="keywords" content="Andrei Abd, CoderX, X, Coder">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="png/00_icon">
+    <title>Prospector</title>
+</head>
+
+<body>
+    <header>
+        <h1 title="Welcome Visitor!">
+            <strong><span>Prospector</span> Search Tool</strong>
+        </h1>
+    </header>
+    <hr>
+    <nav>
+        <!---->
+    </nav>
+    <main>
+        <div>
+            <section>
+                <header>
+                    <h3 title="Introduction">About Project:</h3>
+                    <p title="About Project" class="textMain">
+                        prospector, its professional search tool to find specific files or data on the internet.<br>This project was build and designed with <span title="HyperText Markup Language">HTML</span> - <span title="Cascading Style Sheets">CSS</span>                        and programing language <span title="ECMAScript">JavaScrip</span>.
+                    </p>
+                    <span>[this tool only for educational purpose, i am not responding for any illegal use]</span>
+                    <details class="sourcesDetails">
+                        <summary title="Click">Sources</summary>
+                        <p title="Source text">
+                            <span>We disable source list view on this project!</span><br>
+                            <hr> If you want to download all files feel free to click the link below and download all HTML, Styles, Scripts, and IMG, ICO folders.<br> We use Github site for any branch with any project by CoderX.
+                        </p>
+                        <a href="#" title="Download Source File">
+                            <button>Download Files</button>
+                        </a>
+                        <p title="hint">If you friendly user with git, use this code below and clone all repo files and folders:</p>
+                        <div class="codeSection">
+                            <span style="cursor: disable;">&nbsp; root $ ></span><code title="copy and past into terminal"> git clone https://github.com/AndreiAbd/SimpleLampProject.git</code>
+                        </div>
+                    </details>
+                </header>
+                <hr>
+            </section>
+            <section class="s2" title="Section">
+                <div class="ControlCard" title="Control Card">
+                    <h3 for="ControlCard" style="text-align: center;font-weight: bolder;">Main Manu</h3>
+                    <div class="Option1" id="option1" title="Search Engines">
+                        <hr>
+                        <label for="searchEngin">> Search Engin:</label>
+                        <select name="searchEngin" id="searchEngin" required>
+                            <option value="https://www.google.com/search?q=">Google</option>
+                            <option value="https://duckduckgo.com/?q=">Duck Duck Go</option>
+                            <option value="https://www.bing.com/search?q=">Bing</option>
+                            <!--<option value="http://www.baidu.com/s?ie=">Baidu</option>-->
+                            <option value="https://yandex.com/search/?text=">Yandex</option>
+                        </select>
+                    </div>
+                    <div class="Option2" title="File Type">
+                        <label for="fileType">> File Type:</label>
+                        <select name="fileType" id="fileType" required>
+                            <option value="">none</option>
+                            <option value="filetype:abp">apb</option>
+                            <option value="filetype:apk">apk</option>
+                            <option value="filetype:b">b</option>
+                            <option value="filetype:bb">bb</option>
+                            <option value="filetype:bn">bn</option>
+                            <option value="filetype:bjsn">bjsn</option>
+                            <option value="filetype:c4">c4</option>
+                            <option value="filetype:cap">cab</option>
+                            <option value="filetype:cpt">cpt</option>
+                            <option value="filetype:docx">docx</option>
+                            <option value="filetype:ddz">ddz</option>
+                            <option value="filetype:dn">dn</option>
+                            <option value="filetype:exe">exe</option>
+                            <option value="filetype:flv">flv</option>
+                            <option value="filetype:gif">gif</option>
+                            <option value="filetype:html">html</option>
+                            <option value="filetype:jpeg">jpeg</option>
+                            <option value="filetype:mp3">mp3</option>
+                            <option value="filetype:mp4">mp4</option>
+                            <option value="filetype:pdf">pdf</option>
+                            <option value="filetype:png">png</option>
+                            <option value="filetype:php">php</option>
+                            <option value="filetype:txt">txt</option>
+                            <option value="filetype:zip">zip</option>
+                            <option value="filetype:3gp">3gp</option>
+                            <option value="filetype:7z">7z</option>
+                        </select>
+                    </div>
+                    <div class="Option3" title="File Name">
+                        <label for="fileName">> File Name:</label>
+                        <input type="text" id="option3" value="" placeholder="example book" required>
+                        <hr>
+                        <input type="checkbox" id="checkBoxAd" title="More Options" value="false" onclick="advancedSearchAd()">
+                        <label for="checkbox">Advanced Search Results?</label>
+                    </div>
+                    <div class="advancedSrch" id="advancedSrch">
+                        <div class="Option4" title="Site Name">
+                            <label for="SiteName">> Site:</label>
+                            <input type="text" id="option4" value=" " placeholder="example.com">
+                        </div>
+                        <div class="Option5" title="in Url">
+                            <label for="inUrl">> Url:</label>
+                            <input type="text" value=" " id="option5" placeholder="example.com/example/..">
+                        </div>
+                        <div class="Option6" title="in Text">
+                            <label for="intext">> Text:</label>
+                            <input type="text" value=" " id="option6" placeholder="specific words">
+                        </div>
+                        <hr>
+                    </div>
+                    <button type="submit" onclick="goButtom()" title="Click!">Go</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <hr>
+    <!--Loader Page-->
+    <div class="loader">
+        <div class="logo-loader">
+            <img src="png/00_icon_png.png" width="150px" height="150px" />
+        </div>
+    </div>
+    <footer>
+        <ul title="Information">
+            <li>By Andrei Abd | CoderX ©1993 - <span id="getCurrentYear"></span></li>
+            <li>Contact:
+                <ul>
+                    <li>
+                        <Address>
+                            Written by <a href="mailto:usr.g0a1@gmail.com" title="Mail Us!">Andrei Abd | CoderX</a>.
+                        </Address>
+                    </li>
+                    <li>
+                        <Address>
+                            What's up & Telegram : +963934820511
+                        </Address>
+                    </li>
+                    <li>
+                        <Address>
+                            Visit us at: <a href="https://andreiabd.github.io/CoderX/index.html" title="Official Website!" target="_blank">https://andreiabd.github.io/CoderX/index.html</a>
+                        </Address>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
