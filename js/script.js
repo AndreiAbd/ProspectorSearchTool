@@ -30,13 +30,7 @@ function goButtom() {
     let x = document.getElementById("checkBoxAd").checked;
     if (x != true) {
         window.open(o1.value + o2.value + ' ' + '"' + o3.value + '"', '_blank');
-    } else if (x === true && o1.value != null && o2.value != null && o3.value != null && o4.value != ' ' && o5.value == ' ' && o6.value == ' ') {
-        window.open(o1.value + o2.value + ' ' + '"' + o3.value + '"' + ' ' + 'site:' + o4.value, '_blank');
-    } else if (x === true && o1.value != null && o2.value != null && o3.value != null && o5.value != ' ' && o4.value == ' ' && o6.value == ' ') {
-        window.open(o1.value + o2.value + ' ' + '"' + o3.value + '"' + ' ' + 'inurl:' + o5.value, '_blank');
-    } else if (x === true && o1.value != null && o2.value != null && o3.value != null && o6.value != ' ' && o4.value == ' ' && o5.value == ' ') {
-        window.open(o1.value + o2.value + ' ' + '"' + o3.value + '"' + ' ' + 'intext:' + o4.value, '_blank');
-    } else if (x === true && o1.value != null && o2.value != null && o3.value != null && o6.value != ' ' && o4.value != ' ' && o5.value == ' ') {
+    } else {
         window.open(o1.value + o2.value + ' ' + '"' + o3.value + '"' + ' ' + 'site:' + o4.value + ' ' + 'inurl:' + o5.value + ' ' + 'intext:' + o6.value, '_blank');
     }
 }
